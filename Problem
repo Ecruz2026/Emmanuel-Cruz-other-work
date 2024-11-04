@@ -34,11 +34,11 @@ while True:
     if user_guess < 1 or user_guess > 25:
         print("Your guess is out of bounds! Please guess a number between 1 and 25.")
     else:
-        # Nested if...else statements
+        
         if user_guess == random_number:
             # Step 6: if you guessed it right then you won
             print("Congratulations! You guessed it right. The number was", random_number)
-            break  # exit the loop
+            break  
         elif user_guess < random_number:
             print("Your guess is too low! Try guessing a higher number.")
         else:
