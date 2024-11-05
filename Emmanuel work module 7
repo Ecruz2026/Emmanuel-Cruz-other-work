@@ -3,3 +3,37 @@
     print(f"Don't talk to me, {string}")
 
 say_my_name("Emmanuel Cruz")
+
+
+
+
+ if random_number < 0.5:
+        print(f"Hello {string}")
+    else:
+        print(f"Don't talk to me, {string}")
+
+
+
+
+def lets_see(number):
+    # Define the range
+    lower_limit = 30  # Example lower limit; you can adjust this as needed
+    upper_limit = lower_limit + 10  # Ensure the difference is 10
+
+    # Check if the number is within the defined range
+    if lower_limit <= number <= upper_limit:
+        print(f"{number} is in the range of {lower_limit} to {upper_limit}.")
+        return True
+    else:
+        print(f"{number} is not in the range of {lower_limit} to {upper_limit}.")
+        return False
+
+def a_num_func():
+    # Example input; you can modify this as needed or take input from the user
+    number_to_check = 35  # Change the number you want to check
+    result = lets_see(number_to_check)
+    return result
+
+# Example usage
+if __name__ == "__main__":
+    a_num_func()  # Call the function to see the output
