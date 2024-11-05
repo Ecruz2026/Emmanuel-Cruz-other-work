@@ -1,0 +1,5 @@
+# def say_my_name(string):
+    print(f"Hello {string}")
+    print(f"Don't talk to me, {string}")
+
+say_my_name("Emmanuel Cruz")
