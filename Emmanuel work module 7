@@ -2,41 +2,6 @@
 
 # Nov 5, 2024
 
- #  # Define the range
-
-    
-
-
-def lets_see(number):
-    lower_limit = 30
-    upper_limit = lower_limit + 10
-    if lower_limit <= number <= upper_limit:
-        print(f"{number} is in the range of {lower_limit} to {upper_limit}.")
-        return True
-    else:
-        print(f"{number} is not in the range of {lower_limit} to {upper_limit}.")
-        return False
-
-
-
-# if __name__ == "__main__":
-#    print(a_num_func())
-
-
-def main():
-    print("this only happens when I run the file directly")
-
-
-print("I will always get printed")
-
-if __name__ == " __main__":
-    main()
-
-
-# Emmanuel Cruz 
-
-# Nov 5, 2024
-
 # make a random number between 0 and 1 
 # evaluating wehether the number is less than 0.5
 
@@ -54,11 +19,42 @@ def say_my_name(string):
     else:
         print(f"Don't talk to me, {string}")
 
+# Call the function to introduce yourself
 say_my_name("Emmanuel Cruz")
 
+# Call lets_see function from resources module
 resources.lets_see(31)
 
+def multiply_if():
+    # Generate a list of 10 random numbers
+    random_numbers = [random.randint(1, 100) for _ in range(10)]
+    
+    # Get the range from lets_see function
+    lower_bound, upper_bound = resources.lets_see(31)
 
-multiply_if = ()
+    # Multiply numbers within the defined range by 5
+    updated_numbers = [
+        num * 5 if lower_bound <= num <= upper_bound else num 
+        for num in random_numbers
+    ]
+    
+    return updated_numbers
 
+# Example call to the multiply_if function
+updated_list = multiply_if()
+print(updated_list)
 
+def unique_elements(lst):
+    unique_list = []  # Start with an empty list
+
+    for element in lst:
+        if element not in unique_list:  # Check if the element is already in the unique_list
+            unique_list.append(element)  # Use append to add the unique element
+
+    unique_list.sort()  # Sort the unique elements in ascending order
+    return unique_list
+
+# Testing the unique_elements function with the sample list
+test_list = [1, 3, 3, 3, 6, 2, 3, 5]
+unique_sorted_list = unique_elements(test_list)
+print(unique_sorted_list)  # Expected output: [1, 2, 3, 5, 6]
