@@ -1,0 +1,16 @@
+import random
+import resources
+
+def say_my_name(string):
+    random_number = random.random()
+    if random_number < 0.5:
+        print(f"Hello {string}")
+    else:
+        print(f"Don't talk to me, {string}")
+
+say_my_name("Emmanuel Cruz")
+
+resources.lets_see(31)
+
+
+multiply_if = ()
